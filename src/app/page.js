@@ -1,6 +1,11 @@
 import HeroTwo from "@/components/HeroTwo";
 import HeroSection from "../components/HeroSection";
 import HomeOne from "@/components/HomeOne";
+import SecureSection from "@/components/SecureSection";
+import HomeAction from "@/components/HomeAction";
+import FeaturesSection from "@/components/FeaturesSection";
+import ProductivitySection from "@/components/ProductivitySection";
+import TestimonialSection from "@/components/TestimonialSection";
 
 export default function Home() {
   return (
@@ -13,6 +18,21 @@ export default function Home() {
       </section>
       <section>
         <HomeOne />
+      </section>
+      <section>
+        <SecureSection />
+      </section>
+      <section>
+        <HomeAction />
+      </section>
+      <section>
+        <FeaturesSection />
+      </section>
+      <section>
+        <ProductivitySection />
+      </section>
+      <section>
+        <TestimonialSection />
       </section>
     </div>
   );

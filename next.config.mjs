@@ -24,7 +24,15 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "thumbs.dreamstime.com",
+        hostname: "assets.mycast.io",
+      },
+      {
+        protocol: "https",
+        hostname: "hips.hearstapps.co",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.shopify.com",
       },
     ],
   },
