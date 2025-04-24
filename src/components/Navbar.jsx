@@ -17,7 +17,7 @@ const Navbar = () => {
         <Link href={"/"}>Home</Link>
       </li>
       <li>
-        <Link href={"/about"}>About</Link>
+        <Link href={"/about"}>About Us</Link>
       </li>
       <li>
         <Link href={"/services"}>Services</Link>
@@ -34,7 +34,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="bg-gradient-to-br from-black via-[#0c0c1c] to-[#040414]">
+    <div className="bg-gradient-to-br from-black fixed z-50 top-0 left-0 right-0 via-[#0c0c1c] to-[#040414]">
       <div className="navbar md:w-11/12 mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
