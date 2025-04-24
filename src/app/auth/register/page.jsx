@@ -12,8 +12,8 @@ const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const Register = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 py-10 bg-base-100">
-      <div className="w-full max-w-6xl bg-base-100 rounded-2xl shadow-lg p-6 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <div className="bg-gradient-to-br from-black via-[#0c0c1c] to-[#040414] min-h-screen flex items-center justify-center px-4 py-10 ">
+      <div className="w-full max-w-6xl rounded-2xl shadow-lg p-6 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <div className="order-2 md:order-1 space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold text-center">
             Register

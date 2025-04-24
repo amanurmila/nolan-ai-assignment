@@ -34,6 +34,18 @@ const nextConfig = {
         protocol: "https",
         hostname: "cdn.shopify.com",
       },
+      {
+        protocol: "https",
+        hostname: "incubator.ucf.edu",
+      },
+      {
+        protocol: "https",
+        hostname: "itbrief.com.au",
+      },
+      {
+        protocol: "https",
+        hostname: "thefusioneer.com",
+      },
     ],
   },
 };

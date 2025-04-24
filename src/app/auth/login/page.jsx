@@ -58,8 +58,8 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-base-100 px-4 py-10">
-      <div className="w-full max-w-5xl bg-base-100 rounded-2xl shadow-lg p-6 md:p-10 grid md:grid-cols-2 gap-10 items-center">
+    <div className="bg-gradient-to-br from-black via-[#0c0c1c] to-[#040414] min-h-screen flex items-center justify-center px-4 py-10">
+      <div className="w-full max-w-5xl rounded-2xl shadow-lg p-6 md:p-10 grid md:grid-cols-2 gap-10 items-center">
         <div className="hidden md:block">
           {loginLottie && (
             <Lottie

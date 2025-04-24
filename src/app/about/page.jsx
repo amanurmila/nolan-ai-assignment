@@ -29,7 +29,7 @@ const features = [
 
 const AboutUs = () => {
   return (
-    <section className="bg-base-100 py-20 px-4 md:px-10 lg:px-24">
+    <section className="bg-gradient-to-br from-black via-[#0c0c1c] to-[#040414] py-20 px-4 md:px-10 lg:px-24">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

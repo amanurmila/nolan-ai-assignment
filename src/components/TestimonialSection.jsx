@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const testimonials = [
   {
@@ -70,14 +71,27 @@ export default function TestimonialSection() {
 
   return (
     <section className="bg-[#0B0E14] text-white py-20 px-6">
-      <h2 className="text-4xl font-bold text-center mb-16">
+      <motion.h2
+        className="text-4xl font-bold text-center mb-16"
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
         What our customers say
-      </h2>
+      </motion.h2>
+
       <div className="max-w-6xl mx-auto">
         <Slider {...settings}>
           {testimonials.map((item, idx) => (
             <div key={idx} className="px-4">
-              <div className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12 bg-[#11141b] rounded-2xl shadow-lg p-8">
+              <motion.div
+                className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12 bg-[#11141b] rounded-2xl shadow-lg p-8"
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+              >
                 <img
                   src={item.image}
                   alt={item.name}
@@ -90,16 +104,22 @@ export default function TestimonialSection() {
                     {item.text}
                   </p>
                 </div>
-              </div>
+              </motion.div>
             </div>
           ))}
         </Slider>
 
-        <div className="text-center mt-14">
+        <motion.div
+          className="text-center mt-14"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
           <button className="bg-[#3B82F6] hover:bg-[#2563eb] text-white px-8 py-3 rounded-full text-lg font-semibold transition duration-200">
             All Testimonials →
           </button>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
