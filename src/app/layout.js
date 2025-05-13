@@ -16,19 +16,20 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Nolan AI | Aman",
-  description:
-    "This is a Next.js AI project.",
+  description: "This is a Next.js AI project.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
+      >
         <NextAuthProvider>
           <header>
             <Navbar />
           </header>
-          <main className="pt-10">{children}</main>
+          <main className="pt-10 flex-grow">{children}</main>
         </NextAuthProvider>
         <footer>
           <Footer />

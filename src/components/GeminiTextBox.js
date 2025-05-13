@@ -38,7 +38,7 @@ export default function GeminiTextBox() {
       <textarea
         className="textarea textarea-bordered w-full mb-4"
         placeholder="Enter your prompt..."
-        rows={4}
+        rows={6}
         value={prompt}
         onChange={(e) => setPrompt(e.target.value)}
       />
